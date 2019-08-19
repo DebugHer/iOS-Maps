@@ -12,6 +12,8 @@
 		A05AECF7230AA08400BA6F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05AECF5230AA08400BA6F1E /* Main.storyboard */; };
 		A05AECF9230AA08600BA6F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05AECF8230AA08600BA6F1E /* Assets.xcassets */; };
 		A05AECFC230AA08600BA6F1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05AECFA230AA08600BA6F1E /* LaunchScreen.storyboard */; };
+		A05AED05230AB0AB00BA6F1E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05AED04230AB0AB00BA6F1E /* CoreLocation.framework */; };
+		A05AED07230AB25F00BA6F1E /* GetUserLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05AED06230AB25F00BA6F1E /* GetUserLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A05AECF8230AA08600BA6F1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A05AECFB230AA08600BA6F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A05AECFD230AA08600BA6F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A05AED04230AB0AB00BA6F1E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A05AED06230AB25F00BA6F1E /* GetUserLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05AED05230AB0AB00BA6F1E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				A05AECF0230AA08400BA6F1E /* Memorable places */,
 				A05AECEF230AA08400BA6F1E /* Products */,
+				A05AED03230AB0AB00BA6F1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +62,21 @@
 			children = (
 				A05AECF1230AA08400BA6F1E /* AppDelegate.swift */,
 				A05AECF3230AA08400BA6F1E /* ViewController.swift */,
+				A05AED06230AB25F00BA6F1E /* GetUserLocationViewController.swift */,
 				A05AECF5230AA08400BA6F1E /* Main.storyboard */,
 				A05AECF8230AA08600BA6F1E /* Assets.xcassets */,
 				A05AECFA230AA08600BA6F1E /* LaunchScreen.storyboard */,
 				A05AECFD230AA08600BA6F1E /* Info.plist */,
 			);
 			path = "Memorable places";
+			sourceTree = "<group>";
+		};
+		A05AED03230AB0AB00BA6F1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A05AED04230AB0AB00BA6F1E /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05AED07230AB25F00BA6F1E /* GetUserLocationViewController.swift in Sources */,
 				A05AECF4230AA08400BA6F1E /* ViewController.swift in Sources */,
 				A05AECF2230AA08400BA6F1E /* AppDelegate.swift in Sources */,
 			);
